@@ -1,0 +1,242 @@
+/* =========================
+   Base / Reset
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #1f2933;
+  background-color: #fafafa;
+  line-height: 1.7;
+}
+.logo img {
+  height: 86px;   /* try 32, 36, or 40 */
+}
+.signature {
+  font-family: "Great Vibes", cursive; /* elegant cursive */
+  font-size: 78px;                     /* big and bold */
+  font-style: normal;                  /* Great Vibes is already italic-like */
+  text-align: center;                  /* center horizontally */
+  display: block;                      /* ensures proper centering */
+  margin: 100px auto 60px auto;       /* top/bottom spacing */
+  color: #1f2933;                      /* dark professional color */
+  letter-spacing: 1px;                 /* slight spacing for elegance */
+  max-width: 90%;                      /* prevents overflow on small screens */
+
+  /* New background */
+  background-color: #e0e0e0;           /* light gray background */
+  padding: 20px 30px;                  /* spacing around the text */
+  border-radius: 12px;                 /* rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+}
+@media (max-width: 768px) {
+  .signature {
+    font-size: 48px; /* smaller on mobile */
+  }
+}
+/* =========================
+   Layout
+========================= */
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 20px;
+}
+
+.section:first-of-type {
+  padding-top: 140px;
+}
+
+/* =========================
+   Typography
+========================= */
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+p {
+  font-size: 16px;
+  max-width: 680px;
+}
+
+/* =========================
+   Navigation
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #0f172a;
+  letter-spacing: 0.4px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #0f172a;
+  border-bottom-color: #0f172a;
+}
+
+/* =========================
+   Home
+========================= */
+#home {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #f9fafb
+  );
+}
+
+#home .tagline {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  color: #475569;
+  max-width: 600px;
+}
+
+/* =========================
+   About
+========================= */
+.about-container {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-content p {
+  margin-bottom: 18px;
+}
+
+/* =========================
+   Services
+========================= */
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 14px 40px;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.services li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.services li::before {
+  content: "▪";
+  position: absolute;
+  left: 0;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.tagline {
+  margin-top: 40px;
+  font-size: 15px;
+  font-style: italic;
+  color: #475569;
+}
+
+/* =========================
+   Contact
+========================= */
+#contact p {
+  font-size: 16px;
+}
+
+#contact a {
+  color: #0f172a;
+  text-decoration: none;
+  border-bottom: 1px solid #0f172a;
+}
+
+#contact a:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   Mobile
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+}

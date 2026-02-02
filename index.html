@@ -1,120 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Persis Kabomir</title>
+  <link rel="stylesheet" href="style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    .about-container {
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
-    }
-
-    .about-image img {
-      max-width: 350px;
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .about-content p {
-      margin-bottom: 15px;
-      text-align: justify;
-    }
-
-    ul.services {
-      list-style-type: square;
-      padding-left: 20px;
-      columns: 2;
-      max-width: 600px;
-    }
-
-    ul.services li {
-      margin-bottom: 8px;
-    }
-
-    .tagline {
-      margin-top: 30px;
-      font-weight: bold;
-      font-style: italic;
-    }
-
-    /* Responsive for mobile */
-    @media (max-width: 768px) {
-      .about-container {
-        flex-direction: column;
-      }
-
-      ul.services {
-        columns: 1;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <h1>About Me</h1>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <img src="static/logo.png" alt="Persis Tax & Accounting logo" />
+      </a>
 
-  <div class="about-container">
-    
-    <!-- Image -->
-    <div class="about-image">
-      <img src="static/pic.jpg" alt="Persis Kabomir portrait" />
+      <a href="#home" class="logo">Persis Tax & Accounting</a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Text Content -->
-    <div class="about-content">
-      <p>
-        I’m Persis Kabomir, founder of Persis Tax &amp; Accounting, LLC, and a former IRS Revenue Agent with hands-on experience auditing and analyzing tax returns to ensure compliance with U.S. tax laws. My time at the IRS provided a deep understanding of tax regulations, reporting requirements, and risk management—expertise I now bring directly to my clients.
-      </p>
+  <!-- HOME -->
+  <section id="home" class="section">
+    <p class="signature">Where Integrity Is My Signature.</p>
 
-      <p>
-        At Persis Tax &amp; Accounting, I provide professional, accurate, and compliant tax and accounting services to individuals and businesses. My approach combines technical expertise with practical solutions, helping clients navigate complex tax situations, reduce errors, and meet all regulatory requirements.
-      </p>
+  </section>
 
-      <p>
-        I take pride in offering transparent, personalized guidance tailored to each client’s financial circumstances. Whether you need support with tax preparation, reporting, or strategic planning, my goal is to deliver clarity, confidence, and peace of mind.
-      </p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h1>About Me</h1>
+
+    <div class="about-container">
+      <div class="about-image">
+        <img src="static/pic.jpg" alt="Persis Kabomir portrait" />
+      </div>
+
+      <div class="about-content">
+        <p>
+          I’m Persis Kabomir, founder of Persis Tax & Accounting, LLC, and a former IRS Revenue Agent with hands-on
+          experience auditing and analyzing tax returns to ensure compliance with U.S. tax laws.
+        </p>
+
+        <p>
+          At Persis Tax & Accounting, I provide professional, accurate, and compliant tax and accounting services to
+          individuals and businesses.
+        </p>
+
+        <p>
+          My goal is to deliver clarity, confidence, and peace of mind.
+        </p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Services Section -->
-  <h2>Services</h2>
+  <!-- SERVICES -->
+  <section class="section">
+    <h2>Services</h2>
 
-  <ul class="services">
-    <li>Individual Tax Preparation</li>
-    <li>Business Tax Preparation</li>
-    <li>Tax Planning &amp; Advisory</li>
-    <li>IRS Notice &amp; Audit Support</li>
-    <li>Tax Compliance Review</li>
-    <li>Amended &amp; Prior-Year Returns</li>
-    <li>Estimated Tax Calculations</li>
-    <li>Small Business Bookkeeping</li>
-    <li>New Business Tax Setup</li>
-  </ul>
+    <ul class="services">
+      <li>Individual Tax Preparation</li>
+      <li>Business Tax Preparation</li>
+      <li>Tax Planning & Advisory</li>
+      <li>IRS Notice & Audit Support</li>
+      <li>Tax Compliance Review</li>
+      <li>Amended & Prior-Year Returns</li>
+      <li>Estimated Tax Calculations</li>
+      <li>Small Business Bookkeeping</li>
+      <li>New Business Tax Setup</li>
+    </ul>
 
-  <p class="tagline">Where Integrity Is My Signature.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h1>Contact</h1>
+
+    <p>
+      Email: <a href="mailto:persistaxllc@gmail.com">persistaxllc@gmail.com</a>
+    </p>
+
+    <p>
+      Phone: (469) 265-8952
+    </p>
+  </section>
 
 </body>
+
 </html>
